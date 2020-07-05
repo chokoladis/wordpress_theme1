@@ -1,0 +1,388 @@
+@font-face {
+    font-family: Source;
+    src: url(fonts/SourceSansPro-Bold.otf); /* Путь к файлу со шрифтом */ 
+}
+@font-face {
+    font-family: SourceReg;
+    src: url(fonts/SourceSansPro-Regular.otf); /* Путь к файлу со шрифтом */ 
+}
+*{
+    transition: 0.3s all;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(214, 214, 214);
+}
+.flex{
+    display: flex;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(191, 250, 255);
+}
+.btn{
+    padding: 13px 70px;
+    background: rgb(96, 199, 247);
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    font-family: SourceReg;
+}
+.title{
+    font-size: 38px;
+    font-weight: 900;
+    text-transform: capitalize;
+    word-spacing: 5px;
+}
+.more{
+    font-size: 13px;
+    font-family: SourceReg !important;
+}
+.title,.more{
+    color:white;
+    font-family:Source,Arial, Helvetica, sans-serif;
+}
+input[type="submit"]{
+    width: 130px;
+    color: white !important ;
+    background: rgb(62, 178, 255) !important;
+}
+.container{
+    text-align: center;
+    margin: 0px auto;
+    width: 1170px;
+}
+section{
+    margin-bottom: 20px;
+}
+#header{
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header .container{
+    display: flex;
+    padding: 21px 0px;
+}
+.logo{
+    background: url('cap/TakeMe ф.png');
+    height: 40px;
+    width: 120px;
+    margin-right: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#header ul.menu{
+    display: flex;
+    margin: 0;
+    height: 20px;
+    padding: 11px 0px;
+}
+#header li{
+    width: auto;
+    margin-right: 35px;
+    font-family: Calibri,Microsoft YaHei,Corbel;
+    display: block;
+}
+#search{
+    background: url('cap/hero_bg.png') no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+#search .title{
+    padding-top: 180px;
+    margin-bottom: 30px;
+}
+#search form,#search2 form{
+    margin-top: 95px;
+}
+#search form *:nth-child(n),#search2 form *:nth-child(n){
+    margin-right: 2%;
+}
+#search input,#search select, #search input[type="submit"],#search2 input,#search2 select, #search2 input[type="submit"]{
+    padding: 13px 30px;
+    color: rgb(97, 97, 97);
+    border: 0px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#country{
+    width: 25%;
+}
+#select{
+    width: 21%;
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;
+}
+option {
+    padding-left: 40px;
+}
+#Number{
+    width: 21%;
+}
+input[type="submit"]{
+    width: 13%;    
+}
+input[type="submit"]:hover{
+    background: rgb(76, 211, 170) !important;
+}
+#search2{
+    background: url('cap/hero_bg2.png') no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+#search2 .text{
+    padding-top: 180px;
+    width: 304px;
+    word-spacing: 0.5px;
+    text-align: left !important;
+}
+#search2 .title{
+    margin-bottom: 30px;
+}
+#magical{
+    background: rgb(250, 250, 250);
+    height: 600px;
+    display: flex;
+}
+#magical .container{
+    width: 400px;
+}
+#magical .text{
+    padding-top: 150px;
+    width: 400px;
+    text-align: left;
+}
+#magical .title,#magical .more{
+    color: rgb(131, 130, 130) !important;
+    font-family: Microsoft Tai Le, Corbel,Nirmala UI Semilight !important;
+    margin-bottom: 40px;
+}
+#magical .title{
+    font-weight: 900 !important;
+    margin-bottom: 25px !important;
+}
+#magical .slider{
+    padding-top: 50px;
+}
+#magical .imgs{
+    width: 100%;
+}
+#magical .imgs .last{
+    width: 90px;
+    margin-right: 0;
+    filter: hue-rotate(35deg)  grayscale(0.6) blur(0.6px);
+}
+#magical .imgs img{
+    width: 273px;
+    height: 422px;
+    margin-right: 29px;
+    filter: grayscale(0.7) blur(0.6px);
+}
+.imgs img:hover{
+    filter: grayscale(0.1) blur(0px) hue-rotate(0deg);
+}
+.gots{
+    width: 100px;
+    height: 15px;
+    margin-top: 50px;
+    display: flex;
+}
+.got{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background: url('cap/circle2.png') no-repeat;
+    background-size: cover;
+}
+.active{
+    background: url('cap/circle.png') no-repeat;
+    background-size: cover;
+}
+#plases{
+    height: 638px;
+    background: rgb(250, 250, 250);
+    padding-top: 85px;
+}
+#plases .block{
+    width: 372px;
+    margin-right: 25px;
+    text-align: left;
+    font-family:Nirmala UI Semilight, Microsoft Tai Le, sans-serif;
+}
+#plases .img{
+    height: 260px;
+}
+#plases .title_block{
+    margin:  27px 0px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#plases .info,#plases .rating{
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+    margin-bottom:  27px;
+}
+#plases .info{
+    height: 75px;
+}
+#plases .rating{
+    margin: 0 !important;
+    display: flex;
+}
+#plases .stars{
+    width: 100px;
+    height: 17px;
+    display: flex;
+}
+#plases .star,.half_star{
+    background: url('cap/star1.png') no-repeat;
+    background-size: cover;
+    width: 17px;
+}
+#plases .half_star{
+    background: url('cap/half.png') no-repeat;
+}
+#plases .ratings{
+    left: 50%;
+    position: relative;
+}
+#slider {
+    height: 260px;
+    background: rgb(250, 250, 250);
+    padding: 76px 0px;
+    display: flex;
+}
+#slider .slider{
+    display: flex;
+}
+#slider .blocks{
+    display: flex;
+}
+#slider .block{
+    margin-right: 25px;
+    position: relative;
+}
+#slider .btn {
+    background: url('cap/arrow_left.png') no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 28px;
+    padding: 0 !important;
+    position: relative;
+    left: 100px;
+    top: 40%;
+}
+#slider .right{
+    transform: rotate(180deg);
+    margin: 0;
+    left: -110px !important;
+}
+#slider .img{
+    width: 372px;
+    height: 260px;
+    overflow: hidden;
+}
+#slider .img img{
+    width: 372px;
+    height: 260px;
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+#slider .img:hover img{
+    transform: scale(1);
+    filter: brightness(1);
+}
+#slider .rating{
+    position: absolute;
+    right: -100px;
+    overflow: hidden;
+    color: white;
+    top: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    opacity: 0;
+}
+#slider .stars{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+#slider .star{
+    background: url('cap/star1.png') no-repeat;
+    background-size: contain;
+    height: 12px;
+    width: 12px;
+    margin-right: 2px;
+}
+#slider .no_star{
+    background: url('cap/star5.png') no-repeat;
+    background-size: contain;
+    height: 12px;
+    width: 12px;
+}
+#slider .block:hover .rating{
+    right:30px;
+    opacity: 1;
+}
+#slider .more, #slider .title{
+    text-align: left;
+    top: -51px;
+    position: relative;
+    left: 20px;
+    overflow: hidden;
+}
+#slider .block:hover .more, #slider .block:hover .title{
+    top: -81px;
+}
+#subcribe{
+    height: 100px;
+    padding: 90px 0px;
+    background: rgb(250, 250, 250);
+}
+#subcribe .container{
+    display: flex;
+}
+#subcribe .text {
+    width: 600px;  
+    text-align: left;
+}
+#subcribe .title,#subcribe .more{
+    color: rgb(131, 130, 130) !important;
+    font-family: Microsoft Tai Le, Corbel,Nirmala UI Semilight !important;
+}
+#subcribe .more{
+    margin-top: 30px;
+}
+#subcribe .btn{
+    width: 272px;
+    height: 50px;
+    text-transform: capitalize;
+    position: relative;  
+    right: 0;
+    padding: 0;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 25px;
+}
+#contact_us{
+    height: 100px;
+    padding: 90px 0px;
+    background: rgb(250, 250, 250);
+}
+#contact_us .title {
+    text-transform: capitalize;
+    color: rgb(130, 130, 130) !important;
+}
